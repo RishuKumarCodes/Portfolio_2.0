@@ -1,8 +1,19 @@
-# React + Vite
+# 🎨 About the Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This portfolio website is designed to highlight my skills in full-stack development and design. It's built using React, Three.js for 3D elements, and GSAP for smooth animations, making it visually engaging and interactive.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Interactive 3D Models**: Animated models created using Three.js.
+- **Smooth Animations**: Transitions and animations powered by GSAP.
+- **Responsive Design**: Works seamlessly across desktops, tablets, and mobile devices.
+- **Contact Form**: Reach out directly through the website.
+- **External Links**: Quick access to GitHub, LinkedIn, Twitter, and other platforms.
+
+## 🛠️ Technologies Used
+
+- **React**: For building the UI components.
+- **Three.js**: For 3D graphics and models.
+- **GSAP**: For animations and transitions.
+- **CSS3**: Styling and responsive layout.
+- **HTML5**: Structure and semantics.
