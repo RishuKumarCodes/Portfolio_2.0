@@ -1,29 +1,34 @@
-import { useState } from 'react'
 import './SiteBorder.css'
 import NavBox from './NavBox'
-function SiteBorder() {
-  const [count, setCount] = useState(0)
+import Sidebar from './Sidebar'
+import Hero from '../components/Hero/Hero'
+import About from '../components/About/About'
+import Skills from '../components/Skills/Skills'
+import CursorComponent from './CursorComponent'
 
+function SiteBorder() {
   return (
-    <div className='outer-frame'>
-      <div className='sidebar-container'>
-        <div className="sidebar">
-          <a href="#">Linkedin</a>
-          <a href="#">Twitter</a>
-          <a href="#">leetcode</a>
+    <>
+    <CursorComponent/>
+      <div className='outer-frame'>
+        <Sidebar />
+        <div className='left'>
+          <div className="nav-small-screen">
+            <a href="#">About</a>
+            <a href="#">projects</a>
+            <a href="#">Contact</a>
+          </div>
+          <div className="site-border">
+            <NavBox />
+            <Hero />
+            <About />
+            <Skills />
+            <hr />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br />
+          </div>
         </div>
       </div>
-      <div className='left'>
-        <div class="nav-small-screen">
-          <a href="#">About</a>
-          <a href="#">projects</a>
-          <a href="#">Contact</a>
-        </div>
-        <div className="site-border">
-          <NavBox />
-        </div>
-      </div>
-    </div>
+    </>
   )
 }
 

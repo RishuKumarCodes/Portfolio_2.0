@@ -1,0 +1,32 @@
+[data-hover] {
+	position: relative;
+	[data-hover-bounds] {
+		position: absolute;
+		left: 0;
+		top: 0;
+		inset: 0;
+		/* outline: 1px solid red; */
+	}
+	&:hover {
+		[data-hover-bounds] {
+			transform: scale(3);
+		}
+	}
+}
+
+.custom-cursor {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    z-index: 1000;
+    pointer-events: none;
+    /* transform-origin: center; */
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+

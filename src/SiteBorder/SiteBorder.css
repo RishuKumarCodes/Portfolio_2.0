@@ -4,37 +4,27 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    a{
+      color: white;
+      font-weight: normal;
+    }
 }
 .site-border {
   margin: 0.2rem;
+  margin-left: 0;
   height: calc(100% - 2*0.2rem);
   width: calc(100% - 2*0.2rem);
   background-color: white;
-  border-radius: 1.2rem;
+  border-radius: var(--border-radius);
   position: relative;
+  overflow-X: hidden;
+  scrollbar-width: none;
+
 }
 .left{
   width: 100%;
 }
-/* ------------------------------ sidebar ------------------------------ */
-.sidebar-container{
-  width: 50px;
-  height: 100vh;
-  position: relative;
-}
-.sidebar{
-  height: 50px;
-  transform-origin: top left;
-  transform: rotate(-90deg)translateX(-100%);
-  width: 100vh;
-    display:flex;
-    align-items:center;
-    justify-content:end;
-    gap: 3rem;
-    padding: 0 5rem;
-}
 
-/*  ------------------------small-screen nav-bar ------------------------ */
 .nav-small-screen{
   height: 40px;
   display:flex;
@@ -44,37 +34,13 @@
   font-weight: 100;
 }
 
-/*  ------------------------floating nav-bar ------------------------ */
-.nav-container {
-  background: url('./src/assets/portfolio-nav-bar.svg') no-repeat;
-  background-position: right 0px top 0px;
-  width: 350px;
-  height: 47px;
-  position: absolute;
-  display:flex;
-  align-items:center;
-  justify-content:space-evenly;
-  padding: 0 15px 10px 15px;
-  font-weight: 100;
-}
 @media (min-width: 500px){
   .nav-small-screen{
     display: none;
-  }
-  .nav-container {
-    right: 7%;
-
   }
 }
 @media (max-width: 500px){
   .site-border{
     height: calc(100% - 2*0.2rem - 40px);
-  }
-
-  .nav-container {
-    display: none;
-  }
-  .sidebar-container{
-    display: none;
   }
 }

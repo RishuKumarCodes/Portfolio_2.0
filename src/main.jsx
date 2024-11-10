@@ -4,7 +4,5 @@ import './index.css'
 import App from './SiteBorder/SiteBorder.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
     <App />
-  </StrictMode>,
 )

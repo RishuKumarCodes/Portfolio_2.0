@@ -1,0 +1,31 @@
+.highlight-strip{
+    position: absolute;
+    height: calc((100% - 93vh) * 2);
+    width: calc(100vw - 28% - (var(--space) * 2.8));
+    margin-left: auto;
+    /* margin-top: calc(var(--space)/2); */
+    right: calc(var(--space)/2);
+    bottom: calc(-1*(var(--space)*2 + 5px));
+    display:flex;
+    align-items:end;
+    /* background-color: brown; */
+}
+.highlights{
+    height: 88%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: rgb(185, 55, 55);
+    display:flex;
+    align-items:center;
+    text-wrap:nowrap;
+    font-size: 4rem;
+    color: white;
+}
+
+/* round-edge class css is in BottomLeftBox.css file */
+.round-edge-top-left-3{
+    position: absolute;
+    top: calc(-1 * (var(--border-radius) * 2 - 1px));
+    left: 3px;
+    box-shadow: -15px 15px 0 white ;
+}
