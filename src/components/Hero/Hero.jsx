@@ -4,8 +4,10 @@ import BottomLeftBox from './BottomLeftBox';
 import HighlightStrip from './HighlightStrip';
 import gsap from 'gsap';
 
-
 import ScrollTrigger from 'gsap/ScrollTrigger';
+
+import bgImg from '../../assets/heroSection-bg.jpg'
+import subImg from '../../assets/heroSection-subject.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -99,8 +101,8 @@ function Hero() {
             <div className="image-section" ref={imgBorder}>
                 {/* <img src="./src/assets/hero-bg.jpg" alt="" ref={img} /> */}
                 <div className="img"  ref={img} >
-                <img className='img_1' data-scroll data-scroll-speed="2" src="./src/assets/heroSection-bg.jpg"/>
-                <img className='img_2' data-scroll data-scroll-speed="4" src="./src/assets/heroSection-subject.png" alt="" />
+                <img className='img_1' data-scroll data-scroll-speed="2" src={bgImg}/>
+                <img className='img_2' data-scroll data-scroll-speed="4" src={subImg} alt="" />
                 </div>
 
                 <div className="text"  data-scroll data-scroll-speed="-0.8">
