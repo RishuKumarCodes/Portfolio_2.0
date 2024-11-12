@@ -1,3 +1,26 @@
 .skills{
-    background-color: gray;
+    background-color: #fcebeb;
+    height: 100vh;
+    overflow: hidden;
+}
+.skills .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    margin: auto;
+    p{
+        font-size: 1.3vw;
+    }
+    h1{
+        font-size: 6vw;
+        font-family: "Iceland", sans-serif;
+        color: brown;
+        text-shadow: 0 0 0 black;
+        transition: 300ms;
+        &:hover{
+            text-shadow: -3px 3px 0 black;
+        }
+    }
 }

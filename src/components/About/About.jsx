@@ -9,6 +9,7 @@ function About() {
                 I'm Rishu, an undergrad specializing in full stack web development. I create functional, user-focused applications with a knack for designing clean, intuitive interfaces.
             </p>
             <a
+                data-scroll data-scroll-speed="0.5"
                 data-hover
                 data-hover-bounds
                 href="#"
@@ -18,6 +19,7 @@ function About() {
 
             </a>
             <a
+                data-scroll data-scroll-speed="0.5"
                 data-hover
                 data-hover-bounds
                 href="#"

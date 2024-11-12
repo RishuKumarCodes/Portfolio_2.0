@@ -1,0 +1,52 @@
+.projects {
+    /* padding: 2rem 14%; */
+
+    h1 {
+        font-size: 6vw;
+        font-family: "Iceland", sans-serif;
+        color: brown;
+        text-shadow: 0 0 0 black;
+        transition: 300ms;
+        margin: 3rem 14% 2rem 14%;
+
+        &:hover {
+            text-shadow: -3px 3px 0 black;
+        }
+    }
+
+    div {
+        display: flex;
+        width: 100%;
+        padding: 0 14%;
+        gap: 4%;
+    }
+}
+
+.project {
+    aspect-ratio: 16 / 9.005;
+    /* margin-bottom: 4rem; */
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+
+    .bg {
+        position: absolute;
+        /* height: 10px; */
+        left: 0;
+        z-index: 10;
+    }
+
+    .element {
+        top: 6%;
+        position: absolute;
+        left: 0;
+        object-fit: contain;
+        height: 100%;
+        z-index: 8;
+
+        &:hover .project-para-cursor {
+            display: visible;
+        }
+    }
+}

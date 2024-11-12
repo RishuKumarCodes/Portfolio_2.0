@@ -6,6 +6,7 @@ import { vec2 } from "vecteur";
 
 const CursorComponent = () => {
     const cursorRef = useRef(null);
+    const projectParaRef = useRef(null);
 
     useEffect(() => {
         class Cursor {
@@ -133,6 +134,17 @@ const CursorComponent = () => {
 
         const cursor = new Cursor(cursorRef.current);
 
+        const animateProjectParaCursor = (x, y) => {
+            gsap.to(projectParaRef.current, {
+                x: x -4,
+                y: y - 15,
+                opacity: 1,
+                fontSize: "normal",
+                duration: 0.48,
+                ease: "power2.out",
+
+            });
+        };
         function update() {
             cursor.update();
         }
@@ -141,6 +153,7 @@ const CursorComponent = () => {
             const x = event.clientX;
             const y = event.clientY;
             cursor.updateTargetPosition(x, y);
+            animateProjectParaCursor(x, y);
         }
 
         gsap.ticker.add(update);
@@ -153,7 +166,10 @@ const CursorComponent = () => {
     }, []);
 
     return (
-        <div ref={cursorRef} className="custom-cursor"></div>
+        <>
+            <div ref={cursorRef} className="custom-cursor"></div>
+            <p ref={projectParaRef} className="project-para-cursor">view case-study</p>
+        </>
     );
 };
 

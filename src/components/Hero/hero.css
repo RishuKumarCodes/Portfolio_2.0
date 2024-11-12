@@ -1,31 +1,42 @@
-:root {
-    --space: 2.5rem;
-}
 
 .hero-section {
+    --space: 2.5rem;
     width: 100%;
     height: calc(100vh + 60px);
-    /* background-color: rgb(243, 184, 184); */
     width: calc(100% - var(--space));
     margin: auto;
     margin-top: calc(var(--space)/2);
-}
-
-.hero-section img {
-    height: 93vh;
-    width: 100%;
-    border-radius: var(--border-radius);
-    object-fit: cover;
     position: relative;
+}
+.image-section{
+    overflow: hidden;
+    height: 93vh;
+    border-radius: var(--border-radius);
+}
+.image-section .img_1 {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    top: -60px;
+    left: 0;
+    width: 100%;
+}
+.image-section .img_2 {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    top: -100px;
+    left: 0;
+    width: 100%;
 }
 
 .image-section .text {
     position: absolute;
-    bottom: 3%;
+    bottom: 4.5%;
     right: 5%;
     color: rgb(255, 255, 255);
     display: flex;
-
+    height: min-content;
     * {
         transition: 300ms ease-in-out;
         font-family: "Iceland", sans-serif;
@@ -36,11 +47,11 @@
 
     h1 {
         padding: 0;
-        height: min-content;
         font-size: 16vw;
         display: flex;
-
+        overflow: hidden;
         span {
+            line-height: 100%;
             display: inline-block;
             transition: transform 0.3s ease;
             text-shadow: -4px 4px 0 rgb(0, 0, 0);

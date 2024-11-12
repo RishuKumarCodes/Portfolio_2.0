@@ -10,16 +10,21 @@
     }
 }
 .site-border {
-  margin: 0.2rem;
+  /* margin: 0.2rem; */
+  /* margin-left: 0; */
+  /* height: calc(100% - 2*0.2rem); */
+  /* width: calc(100% - 2*0.2rem); */
+
+  margin: 2px;
   margin-left: 0;
-  height: calc(100% - 2*0.2rem);
-  width: calc(100% - 2*0.2rem);
+  height: calc(100% - 4px);
+  width: calc(100%-2px);
+  
   background-color: white;
   border-radius: var(--border-radius);
   position: relative;
-  overflow-X: hidden;
+  overflow: hidden;
   scrollbar-width: none;
-
 }
 .left{
   width: 100%;

@@ -30,3 +30,11 @@
     transform: translate(-50%, -50%);
 }
 
+.project-para-cursor {
+    position: absolute;
+    visibility: hidden; /* Start with hidden visibility */
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1000;
+}
