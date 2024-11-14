@@ -6,8 +6,8 @@ import gsap from 'gsap';
 
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
-import bgImg from '../../assets/heroSection-bg.jpg'
-import subImg from '../../assets/heroSection-subject.png'
+import bgImg from '/heroSection-bg.jpg'
+import subImg from '/heroSection-subject.png'
 
 gsap.registerPlugin(ScrollTrigger);
 

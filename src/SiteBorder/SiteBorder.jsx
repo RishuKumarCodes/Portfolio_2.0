@@ -15,29 +15,31 @@ import Contact from '../components/Contact/Contact';
 function SiteBorder() {
   const scrollRef = useRef(null);
   const [isTouchDevice, setIsTouchDevice] = useState(false);
+  const [locomotiveScrollInstance, setLocomotiveScrollInstance] = useState(null); // State to hold the locomotive scroll instance
 
   // this checks if the device is touch-screen, if it is touch, locomotive-scroll turns off, custom cursor disappears, and overflow-y becomes scroll.
   useEffect(() => {
     const checkDeviceType = () => {
       setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
     };
-    
+
     checkDeviceType();
 
     let scroll;
     let cursor = document.querySelector(".custom-cursor");
     let cursorTxt = document.querySelector(".project-para-cursor");
-    let scrollx = document.querySelector(".outer-frame");
-    
+    let scrollx = document.querySelector(".site-border");
+
     if (!isTouchDevice) {
       scroll = new LocomotiveScroll({
         el: scrollRef.current,
         smooth: true,
       });
-    }else{
-      cursor.style.display="none"
-      cursorTxt.style.display="none"
-
+      setLocomotiveScrollInstance(scroll); // Save the instance in state
+    } else {
+      cursor.style.display = "none";
+      cursorTxt.style.display = "none";
+      scrollx.style.overflowY = "scroll";
     }
 
     return () => {
@@ -50,15 +52,15 @@ function SiteBorder() {
       <CursorComponent />
       <div className="outer-frame">
         <Sidebar />
+        <NavBox locoScroll={locomotiveScrollInstance} />
         <div className="left">
           <div className="nav-small-screen">
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
           </div>
           <div className="site-border">
-            <div className='scroller-page' ref={scrollRef}>
-              <NavBox />
+            <div className="scroller-page" ref={scrollRef}>
               <Hero />
               <About />
               <Skills />

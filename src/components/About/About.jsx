@@ -4,7 +4,7 @@ import "./About.css";
 
 function About() {
     return (
-        <div className="about">
+        <div id="about">
             <p>
                 I'm Rishu, an undergrad specializing in full stack web development. I create functional, user-focused applications with a knack for designing clean, intuitive interfaces.
             </p>

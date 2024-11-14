@@ -8,8 +8,8 @@
       color: white;
       font-weight: normal;
     }
-}
-.site-border {
+  }
+  .site-border {
   /* margin: 0.2rem; */
   /* margin-left: 0; */
   /* height: calc(100% - 2*0.2rem); */
@@ -19,12 +19,15 @@
   margin-left: 0;
   height: calc(100% - 4px);
   width: calc(100%-2px);
-  
   background-color: white;
   border-radius: var(--border-radius);
   position: relative;
   overflow: hidden;
   scrollbar-width: none;
+}
+.scroller-page{
+  background:url(/bg-grain.svg);
+
 }
 .left{
   width: 100%;

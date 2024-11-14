@@ -28,7 +28,7 @@
 }
 
 .sidebar .Get-cv-btn{
-    background: url("./src/assets/floating-sidebar.svg");
+    background: url("/floating-sidebar.svg");
     width: 225px;
     height: 90%;
     margin-top: 5.5px;

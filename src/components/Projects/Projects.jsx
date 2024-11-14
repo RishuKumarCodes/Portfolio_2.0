@@ -2,6 +2,12 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import "./projects.css";
 
+import browserTab from "/browserTab.svg"
+import proj1 from "/projects/portfolio.png"
+import proj2 from "/projects/baasskyy.png"
+import proj3 from "/projects/spotify.png"
+import proj4 from "/projects/harryPotter.png"
+
 function Projects() {
     useEffect(() => {
         const cursor = document.querySelector('.custom-cursor');
@@ -59,26 +65,26 @@ function Projects() {
     
 
     return (
-        <div className="projects">
+        <div id="projects">
             <h1>PROJECTS</h1>
             <div>
                 <div className="project">
-                    <img className='bg' src="src/assets/browserTab.svg" alt="" />
-                    <img className='element' src="src/assets/projects/portfolio.png" alt="" />
+                    <img className='bg' src={browserTab} alt="" />
+                    <img className='element' src={proj1} alt="" />
                 </div>
                 <div className="project">
-                    <img className='bg' src="src/assets/browserTab.svg" alt="" />
-                    <img className='element' src="src/assets/projects/baasskyy.png" alt="" />
+                    <img className='bg' src={browserTab} alt="" />
+                    <img className='element' src={proj2} alt="" />
                 </div>
             </div>
             <div>
                 <div className="project">
-                    <img className='bg' src="src/assets/browserTab.svg" alt="" />
-                    <img className='element' src="src/assets/projects/spotify.png" alt="" />
+                    <img className='bg' src={browserTab} alt="" />
+                    <img className='element' src={proj3} alt="" />
                 </div>
                 <div className="project">
-                    <img className='bg' src="src/assets/browserTab.svg" alt="" />
-                    <img className='element' src="src/assets/projects/harryPotter.png" alt="" />
+                    <img className='bg' src={browserTab} alt="" />
+                    <img className='element' src={proj4} alt="" />
                 </div>
             </div>
         </div>
