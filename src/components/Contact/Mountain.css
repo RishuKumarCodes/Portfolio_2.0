@@ -1,0 +1,32 @@
+.mountain {
+    /* height: 720px; */
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    position: relative;
+
+    * {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+    }
+
+    #first {
+        bottom: -2px;
+    }
+
+    #sec {
+        bottom: -9%;
+    }
+
+    #third {
+        bottom: -19%;
+    }
+
+    #fourth {
+        bottom: -30%;
+    }
+
+    #fifth {
+        bottom: -27%;
+    }
+}

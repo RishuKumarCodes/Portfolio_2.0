@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Contact.css"
+import "./mountain.css"
 import "./contactleft.css"
 import "./contactRight.css"
 

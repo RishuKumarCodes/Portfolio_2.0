@@ -59,3 +59,30 @@
     }
 
 }
+
+@media (max-width: 1024px) {
+    #contact div{
+        padding: 0 5%;
+    }
+    #contact .left{
+        width: 300px !important;
+        flex: 0.6;
+    }
+    #contact .right{
+        flex: 1;
+    }
+    .copyright{
+        font-size: 1rem !important;
+    }
+    .mail-no {
+        margin: 2rem 0 !important;
+        flex-direction: column;
+        gap: 1.5rem;
+        *{
+            width: max-content !important;
+        }
+    }
+    .socials {
+        width: 100% !important;
+    }
+}

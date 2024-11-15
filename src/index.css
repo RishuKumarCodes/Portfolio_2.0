@@ -40,3 +40,13 @@ a {
     text-shadow: -1px 1px 2px #000000d7;
     /* Text color when selected */
 }
+@media (max-width: 499px) {
+    body{background-color: #fff;}
+}
+@media (max-width: 1024px) {
+    *{
+        letter-spacing:normal;
+        word-spacing: -1.7px;
+        line-height: 150%;
+    }
+}

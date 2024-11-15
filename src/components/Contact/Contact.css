@@ -1,35 +1,3 @@
-.mountain {
-    height: 720px;
-    overflow: hidden;
-    position: relative;
-
-    * {
-        position: absolute;
-        bottom: 0px;
-        left: 0;
-    }
-
-    #first {
-        bottom: -2px;
-    }
-
-    #sec {
-        bottom: -9%;
-    }
-
-    #third {
-        bottom: -19%;
-    }
-
-    #fourth {
-        bottom: -30%;
-    }
-
-    #fifth {
-        bottom: -27%;
-    }
-}
-
 #contact {
     background-color: #662323;
     /* background-color: #944542; */
@@ -53,7 +21,6 @@
 #contact div {
     width: 38%;
     height: 80%;
-    /* border: 2px solid wheat; */
     margin: auto;
 }
 

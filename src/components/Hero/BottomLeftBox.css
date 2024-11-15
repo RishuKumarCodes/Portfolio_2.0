@@ -1,7 +1,6 @@
 .hero-section .info{
     position: absolute;
-    bottom: calc(-1*(var(--space)*2 + 5px));
-    /* left: calc(var(--space)/2); */
+    bottom: 0;
     height: 33%;
     width: 28%;
     border-top-right-radius: var(--border-radius);

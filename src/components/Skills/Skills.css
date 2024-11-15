@@ -1,8 +1,10 @@
 #skills {
     /* background-color: #fcebeb; */
-    height: 100vh;
+    aspect-ratio: 16/9;
+    width: 100%;
     position: relative;
     overflow: hidden;
+    z-index: 50;
 }
 
 #skills .content {
@@ -14,7 +16,7 @@
     margin: auto;
 
     p {
-        font-size: 1.3vw;
+        font-size: max(1.3vw, 1rem);
     }
 
     h1 {
@@ -30,79 +32,19 @@
     }
 }
 
-.tech-stack {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    div {
-        position: absolute;
-        height: 25vh;
-        width: 13vw;
-        border-radius: var(--border-radius);
-        margin: 10px;
-        /* background-color: #fcebeb; */
-        background-color: #fdd4d4;
-        padding: 1rem;
-        text-align: center;
-
-        h3 {
-            font-size: 1.63vw;
-            font-weight: 900;
-            margin-bottom: 5%;
-            opacity: 0.5;
-            color: brown;
-        }
-        p{
-            font-weight: 900;
-            font-size: 1vw;
-            margin: 0.3rem 0;
-            letter-spacing: 0.7px;
-            opacity: 0.6;
-            color: rgb(71, 14, 14);
-        }
+@media (max-width : 768px) {
+    #skills .content{
+        padding: 13%;
+        padding-bottom: 3%;
+        width: 100%;
     }
-
-    #backend {
-        left: 6%;
-        top: 33%;
-        rotate: -12deg;
+}
+@media (max-width : 500px) {
+    #skills{
+        aspect-ratio: 1 / 1;
     }
-
-    #frontend {
-        left: 25%;
-        top: 9.3%;
-        rotate: 7deg;
-    }
-
-    #tools_tech {
-        left: 55%;
-        top: 20%;
-        rotate: -14deg;
-    }
-
-    #datbase {
-        left: 14%;
-        top: 65%;
-        rotate: 14deg;
-    }
-    
-    #languages {
-        left: 76%;
-        top: 55%;
-        rotate: -13deg;
-    }
-    
-    #ui-ux {
-        left: 83.5%;
-        top: 18%;
-        rotate: -4deg;
-    }
-    #problem-solving {
-        left: 55%;
-        bottom: 0;
-        rotate: 5deg;
+    #skills .content{
+        padding: 13% 5% ;
+        padding-bottom: 0;
     }
 }
