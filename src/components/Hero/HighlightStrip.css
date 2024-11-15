@@ -1,6 +1,6 @@
 .highlight-strip{
     position: relative;
-    height: calc((100% - 95.3vh));
+    height: calc((100% - 87% - var(--border-radius)));
     width: calc(100vw - 28% - (var(--space) * 2.8));
     margin-left: auto;
     top: calc(var(--space)/2);
