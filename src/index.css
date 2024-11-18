@@ -25,7 +25,8 @@ html {
 }
 
 body {
-    background-color: black;
+    /* background-color: black; */
+    background-color: white;
 }
 
 a {
@@ -42,6 +43,11 @@ a {
 }
 @media (max-width: 499px) {
     body{background-color: #fff;}
+}
+@media (min-width: 500px) {
+    .scroller-page{
+        margin-left: 50px;
+    }
 }
 @media (max-width: 1024px) {
     *{

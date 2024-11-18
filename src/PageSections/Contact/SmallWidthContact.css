@@ -1,0 +1,107 @@
+#SmallWidthContact {
+    background-color: #662323;
+    width: 100%;
+    min-height: 100svh;
+    box-shadow: 0 -15px #662323;
+    padding: 1rem;
+    color: rgb(230, 157, 157);
+
+    h1 {
+        font-family: "Iceland", sans-serif;
+        line-height: normal;
+        padding-top: 2.5rem;
+        font-size: 4rem;
+        text-shadow: 0 0 0 black;
+    }
+
+    .mail-no {
+        display: flex;
+        flex-direction: row;
+        font-style: italic;
+
+        p,
+        a {
+            background-color: #9b4242;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            transform: skew(10deg);
+            color: white;
+            font-size: small;
+        }
+    }
+
+    .socials {
+        display: flex;
+        transition: 300ms;
+        justify-content: space-around;
+        padding: 5% 0;
+
+        a {
+            opacity: 70%;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        a img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    form {
+        margin: 1.5rem auto; 
+        width: min-content;
+        textarea {
+            resize: vertical;
+        }
+
+        input,
+        textarea {
+            padding-top: 4%;
+            padding-bottom: 4%;
+            margin-top: 3%;
+            background-color: transparent;
+            font-size: 2.34dvh;
+            width: 80vw;
+            color: white;
+            border: none;
+            border-bottom: 1px solid hsla(0, 45%, 67%, 0.286);
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-bottom: 1px solid #d18787;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #d3b0b0;
+            font-size: 75%;
+        }
+
+        button {
+            position: relative;
+            left: 50%;
+            width: 7.5rem;
+            height: 7.5rem;
+            border-radius: 50%;
+            font-size: 120%;
+            border: none;
+            margin: 2rem 0;
+            background-color: #e99e9e;
+        }
+
+        button:hover {
+            background-color: #ffe0e0;
+            transition: 500ms;
+            font-size: 130%;
+        }
+
+    }
+        .copyright {
+            text-align: center;
+        }
+
+}

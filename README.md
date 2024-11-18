@@ -13,7 +13,6 @@ This portfolio website is designed to highlight my skills in full-stack developm
 ## 🛠️ Technologies Used
 
 - **React**: For building the UI components.
-- **Three.js**: For 3D graphics and models.
 - **GSAP**: For animations and transitions.
 - **CSS3**: Styling and responsive layout.
 - **HTML5**: Structure and semantics.

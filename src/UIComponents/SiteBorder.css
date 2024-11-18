@@ -1,0 +1,64 @@
+.siteborder{
+  /* NOTE: CHANGING VARIABLE MAY REQUIRE CHANGING GSAP ANIMATION */
+  --sidebar-width:50px;
+  --frame-radius:50px;
+  --frame-thickness:2.5px;
+  position: absolute;
+  background-color: black;
+  z-index: 2;
+}
+.sp{
+  background-color: black;
+  position: fixed;  
+}
+.top-space{
+  height: var(--frame-thickness);
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+.bottom-space{
+  width: var(--frame-thickness);
+  height: 100vh;
+  top: 0;
+  right: 0;
+}
+.right-space{
+  height: var(--frame-thickness);
+  width: 100vw;
+  bottom: 0;
+}
+
+.corners{
+  div{
+    height: var(--frame-radius);
+    width: var(--frame-radius);
+    position: fixed;
+    border-radius: 50%;
+  }
+  .t-1{
+    left: var(--sidebar-width);
+    top: var(--frame-thickness);
+    box-shadow: -25px -25px 0 rgb(0, 0, 0);
+  }
+  .t-2{
+    right: var(--frame-thickness);
+    top: var(--frame-thickness);
+    box-shadow: 25px -25px 0 rgb(0, 0, 0);
+  }
+  .b-1{
+    left: var(--sidebar-width);
+    bottom: var(--frame-thickness);
+    box-shadow: -25px 25px 0 rgb(0, 0, 0);
+  }
+  .b-2{
+    right: var(--frame-thickness);
+    bottom: var(--frame-thickness);
+    box-shadow: 25px 25px 0 rgb(0, 0, 0);
+  }
+}
+@media (max-width: 499px) {
+  .sp, .corners{
+      display: none;
+  }
+}

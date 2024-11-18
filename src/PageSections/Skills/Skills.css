@@ -1,0 +1,73 @@
+#skills {
+    /* background-color: #fcebeb; */
+    aspect-ratio: 16/9;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 50;
+}
+
+#skills .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    margin: auto;
+    
+    p {
+        font-size: max(1.3vw, 1rem);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .wordBox {
+            flex-direction: row;
+            width: min-content;
+            padding-right: 0.8rem;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            overflow: hidden;
+
+            .word {
+                position: relative;;
+                white-space: nowrap;
+                width: min-content;
+                top: 100%;
+            }
+        }
+    }
+    .heading{
+        overflow: hidden;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    h1 {
+        position: relative;
+        top:100%;
+        font-size: 6vw;
+        font-family: "Iceland", sans-serif;
+        color: brown;
+        text-shadow: 0 0 0 black;
+        transition: 100ms;
+
+        &:hover {
+            text-shadow: -3px 3px 0 black;
+        }
+    }
+}
+
+@media (max-width : 768px) {
+    #skills .content{
+        padding: 13%;
+        padding-bottom: 3%;
+        width: 100%;
+    }
+}
+@media (max-width : 500px) {
+    #skills{
+        aspect-ratio: 1 / 1;
+    }
+    #skills .content{
+        padding: 13% 5% ;
+        padding-bottom: 0;
+    }
+}

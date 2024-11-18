@@ -1,0 +1,33 @@
+.loadingContainer {
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-color: transparent;
+}
+
+.line1, .line2{
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.loadingContainer p {
+    font-size: 6vw;
+    font-family: "Staatliches", sans-serif;
+    font-weight: bold;
+    color: rgb(150, 38, 38);
+    line-height: 90%;
+    margin: 0;
+}
+
+
+.letter1, .letter2 {
+    display: inline-block;
+    opacity: 1;
+}

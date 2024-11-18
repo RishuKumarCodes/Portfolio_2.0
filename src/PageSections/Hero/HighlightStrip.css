@@ -1,0 +1,53 @@
+.highlight-strip {
+    position: relative;
+    height: calc((100% - 87% - var(--border-radius)));
+    width: calc(100vw - 28% - (var(--space) * 2.8));
+    margin-left: auto;
+    top: calc(var(--space)/2);
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    color: rgb(165, 42, 42);
+    font-family: "Staatliches", sans-serif;
+    font-size: 8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.highlight-strip p {
+    white-space: nowrap;
+    animation: moveHighlight 25s linear infinite; 
+}
+
+@keyframes moveHighlight {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* round-edge class css is in BottomLeftBox.css file */
+.round-edge-top-left-3 {
+    position: absolute;
+    bottom: calc(var(--border-radius) + 100%);
+    left: 0;
+    box-shadow: -15px 15px 0 white;
+}
+
+@media (max-width: 768px) {
+    .highlight-strip {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .highlight-strip {
+        height: 8vh;
+        font-size: 2.4rem;
+        border-radius: 8px;
+    }
+}
